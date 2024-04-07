@@ -19,18 +19,6 @@ import {
     Notifications as NotificationsIcon,
   } from "@mui/icons-material";
   import { useNavigate } from "react-router-dom";
-//   import axios from "axios";
-//   import { server } from "../../constants/config";
-//   import toast from "react-hot-toast";
-//   import { useDispatch, useSelector } from "react-redux";
-//   import { userNotExists } from "../../redux/reducers/auth";
-//   import {
-//     setIsMobile,
-//     setIsNewGroup,
-//     setIsNotification,
-//     setIsSearch,
-//   } from "../../redux/reducers/misc";
-//   import { resetNotificationCount } from "../../redux/reducers/chat";
   
   const SearchDialog = lazy(() => import("../specific/Search"));
   const NotifcationDialog = lazy(() => import("../specific/Notifications"));
@@ -39,39 +27,8 @@ import {
   const Header = () => {
 
     const navigate = useNavigate();
-    // const dispatch = useDispatch();
-  
-    // const { isSearch, isNotification, isNewGroup } = useSelector(
-    //   (state) => state.misc
-    // );
-    // const { notificationCount } = useSelector((state) => state.chat);
-  
-    // const handleMobile = () => dispatch(setIsMobile(true));
-  
-    // const openSearch = () => dispatch(setIsSearch(true));
-  
-    // const openNewGroup = () => {
-    //   dispatch(setIsNewGroup(true));
-    // };
-  
-    // const openNotification = () => {
-    //   dispatch(setIsNotification(true));
-    //   dispatch(resetNotificationCount());
-    // };
   
     const navigateToGroup = () => navigate("/groups");
-  
-    // const logoutHandler = async () => {
-    //   try {
-    //     const { data } = await axios.get(`${server}/api/v1/user/logout`, {
-    //       withCredentials: true,
-    //     });
-    //     dispatch(userNotExists());
-    //     toast.success(data.message);
-    //   } catch (error) {
-    //     toast.error(error?.response?.data?.message || "Something went wrong");
-    //   }
-    // };
 
     const [isMobile,setIsMobile] = useState(false);
     const [isSearch,setIsSearch] = useState(false);
