@@ -6,6 +6,7 @@ import Header from "./Header";
 import Title from "../shared/title";
 import ChatList from "../specific/ChatList";
 import { samepleChats } from "../../constants/sampleData";
+import Profile from "../specific/Profile";
 
 const AppLayout = () => (WrappedComponent) => {
  
@@ -56,7 +57,7 @@ const AppLayout = () => (WrappedComponent) => {
             }}
           >
 
-            {/* <Profile user={user} /> */}
+            <Profile />
           </Grid>
         </Grid>
       </>
