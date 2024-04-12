@@ -71,7 +71,7 @@ import {
                   display: { xs: "none", sm: "block" },
                 }}
               >
-                Chatify
+                CHATIFY
               </Typography>
   
             {/* WHEN SCREEN SIZE IS LESS THIS BUTTON WILL BE DISPLAYED */}
